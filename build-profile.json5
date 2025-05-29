@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/donaldlu/.ohos/config/default_HMSVGColorFilter__OvQfhaVEnktmAOsdosO1k08QwLscLo5D9glBuMMKvA=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A355EA90A202413A5AFAFEFF6A5745868506D1925086E2CD6474DB923C8246D6326F5279CA261",
+          "profile": "/Users/donaldlu/.ohos/config/default_HMSVGColorFilter__OvQfhaVEnktmAOsdosO1k08QwLscLo5D9glBuMMKvA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/donaldlu/.ohos/config/default_HMSVGColorFilter__OvQfhaVEnktmAOsdosO1k08QwLscLo5D9glBuMMKvA=.p12",
+          "storePassword": "0000001A376421F31BBD1DC88A47B8B39C7BE46FCAE617A4695413A77CAFEC3C602F7C29A58F6A084F74"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.0.5(17)",
+        "compatibleSdkVersion": "5.0.2(14)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
